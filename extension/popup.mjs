@@ -4,7 +4,7 @@ const $ = (id) => document.getElementById(id);
 
 async function init() {
   const cfg = await chrome.runtime.sendMessage({ action: 'get_config' });
-  $('serverUrl').value = cfg.serverUrl || 'ws://119.29.193.16:25818';
+  $('serverUrl').value = cfg.serverUrl || 'ws://127.0.0.1:25818';
   $('authToken').value = cfg.authToken || '';
   await updateStatus();
 }

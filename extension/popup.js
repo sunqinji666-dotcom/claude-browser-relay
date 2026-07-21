@@ -82,7 +82,7 @@ async function updateStatus() {
 async function loadConfig() {
   try {
     const cfg = await chrome.runtime.sendMessage({ action: 'get_config' });
-    $('serverUrl').value = cfg.serverUrl || 'ws://119.29.193.16:25818';
+    $('serverUrl').value = cfg.serverUrl || 'ws://127.0.0.1:25818';
     $('authToken').value = cfg.authToken || '';
   } catch {}
 }
