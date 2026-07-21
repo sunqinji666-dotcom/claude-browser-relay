@@ -1,0 +1,17 @@
+{
+  "name": "claude-browser-relay-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "WebSocket relay server for Claude browser control",
+  "scripts": {
+    "start": "node index.mjs",
+    "dev": "node --watch index.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

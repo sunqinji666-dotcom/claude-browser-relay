@@ -1,0 +1,4 @@
+{
+  "serverUrl": "ws://127.0.0.1:25818",
+  "authToken": "replace-with-your-own-token"
+}

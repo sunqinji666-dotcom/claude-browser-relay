@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"></head><body>
+<script>
+// Sandbox page for JS evaluation — bypasses CSP restrictions
+// Content Security Policy blocks eval in extension/service worker context,
+// but sandbox pages have their own isolated CSP that allows eval.
+// The background SW sends code here, we eval it, send result back.
+window.addEventListener('message', (event) => {
+  const { id, code } = event.data;
+  try {
+    const result = eval(code);
+    event.source.postMessage({ id, ok: true, result }, '*');
+  } catch (err) {
+    event.source.postMessage({ id, ok: false, error: err.message }, '*');
+  }
+});
+</script>
+</body></html>
