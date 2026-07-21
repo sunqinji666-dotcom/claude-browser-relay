@@ -2,7 +2,7 @@
 
 A local browser relay protocol and extension scaffold for controlled automation.
 
-![Project visual](docs/assets/hero-system-v1.png)
+![claude-browser-relay project visual](assets/claude-browser-relay-hero.png)
 
 ## What it does
 

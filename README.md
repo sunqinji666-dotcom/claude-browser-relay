@@ -1,6 +1,6 @@
 # Claude Browser Relay
 
-![Project visual](docs/assets/hero-system-v1.png)
+![claude-browser-relay project visual](docs/assets/claude-browser-relay-hero.png)
 
 A local browser relay protocol and extension scaffold for controlled browser automation.
 
